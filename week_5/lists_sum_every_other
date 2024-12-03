@@ -1,0 +1,27 @@
+def sum_every_other(number_list: list):
+       
+    if not number_list:  # check if the list is empty
+       return None
+    
+    every_other_sum = 0 #start from 0
+
+    for i in range (0, len(number_list), 2): # starting from when index i 0 and then adding every 2nd element in the number list
+        every_other_sum += number_list[i]
+
+    return every_other_sum
+
+def main():
+      
+    number_list = []
+
+    for i in range (5):
+        number = int(input("Enter an integer: "))
+        number_list.append(number)
+
+    total = sum_every_other(number_list)
+    
+    print()
+    print(f"{total}")
+
+if __name__ == "__main__":
+ main()
