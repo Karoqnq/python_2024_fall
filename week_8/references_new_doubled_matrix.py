@@ -5,8 +5,8 @@ def new_doubled_matrix(matrix):
     doubled_matrix = deepcopy(matrix)
 
     for row in range(len(doubled_matrix)): # Go through the rows
-       for i in range(len(doubled_matrix[i])): # Go through the indexes
-          doubled_matrix[i] = doubled_matrix[i] * 2 # double them
+       for i in range(len(doubled_matrix[row])): # Go through the indexes
+          doubled_matrix[row][i] = doubled_matrix[row][i] * 2 # double the element in the specific row in the specif index
 
     return doubled_matrix
     
@@ -16,5 +16,5 @@ def main():
  m2 = new_doubled_matrix(m1)
  print(m1)
  print(m2)
- 
+
 main()
